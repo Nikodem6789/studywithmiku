@@ -1,13 +1,11 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>miku dayo.</title>
-  </head>
-  <body>
-    <img src="https://i.redd.it/f00trgqw7kbd1.jpeg" alt="miku">
-    <input placeholder="whats the math question" id="q">
-    <button id="d">Solve it with Miku!!!</button>
+const soundFile = "mikudayoooo-burglar-mikudayo.mp3" // just 1 media file
 
-    <script src="script.js"></script>
-  </body>
-</html>
+document.getElementById("d").onclick = () => {
+    let sound = new Audio(soundFile)
+    sound.currentTime = 0
+    sound.play()
+    setTimeout(() => {
+        sound.pause()
+        sound.currentTime = 0
+    }, 3000) // only first 3 sec
+}
