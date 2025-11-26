@@ -1,12 +1,13 @@
-<script>
-let sound = new Audio("mikudayoooo-burglar-mikudayo.mp3")
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>miku dayo.</title>
+  </head>
+  <body>
+    <img src="https://i.redd.it/f00trgqw7kbd1.jpeg" alt="miku">
+    <input placeholder="whats the math question" id="q">
+    <button id="d">Solve it with Miku!!!</button>
 
-document.getElementById("d").onclick = () => {
-    sound.currentTime = 0        // start from beginning
-    sound.play()
-    setTimeout(() => {
-        sound.pause()            // stop after 3 sec
-        sound.currentTime = 0    // rewind for next click
-    }, 3000)
-}
-</script>
+    <script src="script.js"></script>
+  </body>
+</html>
