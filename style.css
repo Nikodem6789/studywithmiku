@@ -1,11 +1,17 @@
 body {
   background-color: #17afe6;
-  align: center;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;  /* Stack vertically */
+  align-items: center;     /* Center horizontally */
+  min-height: 100vh;
 }
 
+
 .button {
-  width: 300px;
-  height: 200px;
+  width: 150px;
+  height: 100px;
   background-color: dark-green;
   border-radius: 0px 20px 0px 20px;
 }
